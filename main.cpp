@@ -9,7 +9,7 @@ int main() {
     std::cout << "Lab 1 Variant 9\n\n";
 
     auto data = std::make_shared<const InputData>(InputData{
-        "ligma w bread ball key fox agartha mix mogged tree eye triangle",
+        "ligma w bread ball key fox mix mogged tree eye triangle",
         "fox"
         });
 
