@@ -30,5 +30,18 @@ int main() {
     std::cout << "\nTotal comparisons: " << comparisonsA << "\n";
     std::cout << "Execution time: " << timeA << " ms\n\n";
 
+    // робота алгоритму B (KMP)
+    auto resultB = calculateB(data);
+    auto& [positionsB, countB, comparisonsB, timeB] = *resultB;
+
+    std::cout << "Student B (KMP)\n";
+    std::cout << "Matches found: " << countB << "\n";
+    std::cout << "Positions: ";
+    for (int pos : positionsB) {
+        std::cout << pos << " ";
+    }
+    std::cout << "\nTotal comparisons: " << comparisonsB << "\n";
+    std::cout << "Execution time: " << timeB << " ms\n\n";
+
     return 0;
 }
